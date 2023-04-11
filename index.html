@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tra cứu thông tin</title>
+
+    <script src="https://congdan.thaibinh.ga/js/app.js"></script>
+    <!-- Styles -->
+    <link href="https://congdan.thaibinh.ga/css/app.css" rel="stylesheet">
+	<script type = "text/JavaScript" src = " https://momentjs.com/downloads/moment.js"></script>
+
+</head>
+<body>
+<div class="flex-center position-ref full-height">
+    <div class="content mt-3">
+	     <tr>
+        <td colspan="3" class="bold"><p style="text-align:center;font-size:16px;">HỆ THỐNG TRA CỨU</p></td>
+      </tr>
+        <div class="form-group row">
+            <div class="col-md-4 offset-md-4">
+			 <label for="">Họ tên:</label>
+                <input id="hoTen" type="text" style="text-transform: capitalize;" placeholder="Họ và tên"
+                       class="form-control "
+                       name="hoTen" value="" required
+                       autocomplete="hoTen" autofocus>
+                <span class="invalid-feedback" role="alert" id="feedback"></span>
+            </div>
+			<div class="col-md-4 offset-md-4">
+			<label for="">Số CCCD:</label>
+                <input id="soCCCD" type="text" placeholder="Số CCCD"
+                       class="form-control "
+                       name="soCCCD" value="" required
+                       autocomplete="soCCCD" autofocus>
+                <span class="invalid-feedback" role="alert" id="feedback"></span>
+            </div>
+			<div class="col-md-4 offset-md-4">
+			<label for="">Số CMND:</label>
+                <input id="soCMND" type="text" placeholder="Số CMND"
+                       class="form-control "
+                       name="soCMND" value="" required
+                       autocomplete="soCMND" autofocus>
+                <span class="invalid-feedback" role="alert" id="feedback"></span>
+            </div>
+			<div class="col-md-4 offset-md-4">
+			<label for="">Năm sinh:</label>
+                <input id="namSinh" type="text" placeholder="Năm sinh"
+                       class="form-control "
+                       name="namSinh" value="" required
+                       autocomplete="namSinh" autofocus>
+                <span class="invalid-feedback" role="alert" id="feedback"></span>
+            </div>
+        </div>
+        <div class="form-group row mb-0 text-center">
+            <div class="col-md-12">
+                <button type="button" id="submit" class="btn btn-primary">
+                    Tra cứu
+                </button>
+            </div>
+        </div>
+        <div class="row table-responsive mt-3">
+            <div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
+                <table class="table table-bordered" id="table">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://congdan.thaibinh.ga/js/get_dl.js"></script>
+
+</body>
+</html>
