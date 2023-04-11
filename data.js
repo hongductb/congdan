@@ -28,7 +28,7 @@
         }
         $.ajax({
             type: "POST",
-            url: "https://api.dancu.thaibinh/KiemTraThongTin/XacThuc",
+           url: "https://corsproxy.io/?https://api.dancu.thaibinh.ga/KiemTraThongTin/XacThuc",
             data: data,
             cache: false,
             success: function (result) {
